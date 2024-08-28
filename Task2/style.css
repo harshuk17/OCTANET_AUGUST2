@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+     height: 100%;
+    /* width: 50%;
+    height: 500px; */
+}
+.outer-frame{
+    width: 30%;
+    height: 80%;
+    outline: 2px solid #333;
+    border-radius: 20px;
+    /* justify-content: center;
+    align-items: center; */
+    backdrop-filter: blur(6px);
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.input-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+input{
+    width: 78%;
+    background: transparent;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 10px;
+}
+input::placeholder{
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+button{
+    width:36px;
+    height:36px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    /* color: #1c1b1b; */
+    border-color: #333;
+    outline: none;
+}
+i{
+    
+    font-size: 28px;
+}
+.todos-container{
+    /* outline: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 71%;
+    
+}
+.todos{
+    list-style-type: none;
+}
+.empty-list{
+    margin-left: 28%;
+    margin-top: 19%;
+    width: 46%;
+}
+.entered-task{
+    /* outline: 2px solid red; */
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+.subheading{
+    font-size: 22px;
+    text-align: center;
+    padding-top: 14px;
+}
+.task-container{
+    position: absolute;
+    margin: 18px 24px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    clear: both;
+}
+.task-container li{
+    flex-grow: 1;
+}
+.task-container .edit{
+    font-size: 23px;
+}
+.parent-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.icons-container {
+    display: flex; 
+    gap: 10px; 
+}
+@media screen and (max-width:924px) {
+
+    .outer-frame{
+        width: 45%;
+    }
+
+    
+}
+
+@media screen and (max-width:1054px){
+
+    .outer-frame{
+        width: 46%;
+    }
+    
+}
+@media screen and (max-width:600px){
+
+    .outer-frame{
+        width: 66%;
+    }
+    
+}
+@media screen and (max-width:420px){
+
+    .outer-frame{
+        width: 85%;
+    }
+}

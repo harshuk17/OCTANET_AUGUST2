@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="outer-frame">
+            <h1>Todo List</h1>
+            <div class="input-container">
+                <input type="text" placeholder="Add a new task">
+                <button>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+            </div>
+            <div class="todos-container">
+                <div class="entered-task" id="enteredTask">
+                    <ul class="todos" id="todos">
+                    </ul>
+                    <img src="./empty2new.png" alt="empty-todo-list" class="empty-list" id="image">
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
